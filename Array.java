@@ -1,11 +1,10 @@
 //найти наибольшее число в массиве, вернуть -999, если массив нулевой длины"
 class Array{
 	public static void main(String[]args){
-		int []myArr = {5,8,1,1};
-		int []mySecondArr = new int [0];
+		//int []myArr = {5,8,1,1};
+		int [] mySecondArr = new int[0];
 		
-		System.out.println(returnMaxValue(myArr));
-		
+		System.out.println(returnMaxValue(mySecondArr));
 	}
 
 	public static int returnMaxValue(int[] inArr){
@@ -13,10 +12,17 @@ class Array{
 		for (int i =0;i<inArr.length;i++){
 			if(maxValueOfArr<inArr[i]){
 				maxValueOfArr = inArr[i];
+
 			}
 		}
 		return maxValueOfArr;
+	
+		if(inArr[inArr.length]== inArr[0]){
+			System.out.print("Массив равен нулю");
+		}
+		return -999;
 	}
+	
 	
 	/*найти наибольшее число в массиве;
 	дейстувем методом сравнения: сравниваем каждое текущее число с тем, что мы положили в переменную - интовая переменная 
