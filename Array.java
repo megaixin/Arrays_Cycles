@@ -21,8 +21,9 @@ class Array{
 			if(maxValueOfArr<inArr[i]){
 				maxValueOfArr = inArr[i];
 				//возвращаем его
-				return maxValueOfArr ;
+				
 			}	
+			return maxValueOfArr ;
 		}
 	}
 
