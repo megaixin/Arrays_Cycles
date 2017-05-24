@@ -1,32 +1,28 @@
 //найти наибольшее число в массиве, вернуть -999, если массив нулевой длины"
 class Array{
 	public static void main(String[]args){
-		int []myArr = {5,8,1,1};
-		//int [] mySecondArr = new int[0];
+		//int []myArr = {5,8,1,1};
+		int [] mySecondArr = new int[0];
 		
-		System.out.println(returnMaxValue(myArr));
+		System.out.println(returnMaxValue(mySecondArr));
 	}
 
 	public static int returnMaxValue(int[] inArr){
-		int maxValueOfArr = inArr[0];
-		for (int i =0; i<inArr.length;i++){
-			//если массив нулевой
-			if(inArr[i]==0){
-				//возвращаем -999
+	
+		for(int i =0; i<inArr.length;i++){
+			if (inArr.length == 0){
 			return -999;
 			}
-			//если массив не нулевой
-			if (inArr[i] !=0){
-				//вычисляем его наибольшее значение
+			if (inArr.length != 0){
+				int maxValueOfArr = inArr[0];
 				if(maxValueOfArr<inArr[i]){
 					maxValueOfArr = inArr[i];
+				
 				}
-			}
+				return maxValueOfArr;
+			}	
 		}
-		//возвращаем его
-		return maxValueOfArr;
 	}
-
 	/*если массив нулевой
 		возвращаем -999
 	если массив не нулевой
