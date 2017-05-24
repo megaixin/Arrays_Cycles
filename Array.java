@@ -8,21 +8,6 @@ class Array{
 	}
 
 	public static int returnMaxValue(int[] inArr){
-		//если массив нулевой
-		if (inArr.length == 0){
-			//возвращаем -999
-			return -999;
-			
-		}else{
-			//вычисляем наибольшее значение
-		int maxValueOfArr = inArr[0];
-			for(int i = 0;i<inArr.length;i++){
-			
-				if(maxValueOfArr<inArr[i]){
-					maxValueOfArr = inArr[i];
-				}	
-			}	
-			return maxValueOfArr;
-		}	
+		return -1;
 	}
 }
