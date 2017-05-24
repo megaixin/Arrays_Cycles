@@ -9,7 +9,7 @@ class Array{
 
 	public static int returnMaxValue(int[] inArr){
 		for(int i =0;i<inArr.length;i++){
-			int maxValueOfArr = inArr[0];
+			
 			//если массив нулевой
 			if (inArr.length == 0){
 				//возвращаем -999
@@ -17,13 +17,13 @@ class Array{
 			
 			}else{
 			//вычисляем наибольшее значение
+				int maxValueOfArr = inArr[0];
 				if(maxValueOfArr<inArr[i]){
 					maxValueOfArr = inArr[i];
-				return maxValueOfArr;
+				
 				}	
-				
-			}
-				
+				return maxValueOfArr;
+			}	
 		}
 	}
 
