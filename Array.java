@@ -20,9 +20,8 @@ class Array{
 			int maxValueOfArr = inArr[0];
 			if(maxValueOfArr<inArr[i]){
 				maxValueOfArr = inArr[i];
-				//возвращаем его
-				
 			}	
+			//возвращаем его
 			return maxValueOfArr ;
 		}
 	}
