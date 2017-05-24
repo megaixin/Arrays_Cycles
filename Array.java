@@ -9,23 +9,22 @@ class Array{
 
 	public static int returnMaxValue(int[] inArr){
 		for(int i =0;i<inArr.length;i++){
+			int maxValueOfArr = inArr[0];
 			//если массив нулевой
 			if (inArr.length == 0){
 				//возвращаем -999
 				return -999;
-			}
-			//если массив не нулевой
-			if (inArr.length != 0){
+			
+			}else{
 			//вычисляем наибольшее значение
-				int maxValueOfArr = inArr[0];
 				if(maxValueOfArr<inArr[i]){
 					maxValueOfArr = inArr[i];
+				return maxValueOfArr;
 				}	
-				//возвращаем его
-				return maxValueOfArr ;
+				
 			}
+				
 		}
-
 	}
 
 	/*если массив нулевой
