@@ -6,7 +6,6 @@ class Array{
 		
 		System.out.println(returnMaxValue(mySecondArr));
 	}
-
 	public static int returnMaxValue(int[] inArr){
 		//кладем в переменную -999
 		int outResult = -999;
