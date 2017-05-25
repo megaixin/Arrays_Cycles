@@ -1,7 +1,7 @@
 //найти наибольшее число в массиве, вернуть -999, если массив нулевой длины"
 class Array{
 	public static void main(String[]args){
-		int []myArr = {5,8,1,2};
+		int []myArr = {1, 5, 4, 3};
 		//int [] mySecondArr = new int[0];
 		
 		System.out.println(returnMaxValue(myArr));
@@ -16,9 +16,10 @@ class Array{
 			int maxValueOfArr = inArr[0];
 			for(int i = 0;i<inArr.length;i++){
 				if(maxValueOfArr<inArr[i]){
-					//кладем в переменную наибольшее
-					outResult = inArr[i];
+					maxValueOfArr = inArr[i];
 				}	
+			//кладем в переменную наибольшее
+			outResult = maxValueOfArr;
 			}	
 		}
 		//возвращаем эту переменную
