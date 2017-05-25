@@ -24,7 +24,4 @@ class ArrayMethod{
 		//возвращаем переменную с позицией ячейки
 		return positionOfMaxVal;
 	}
-	
-
-	
 }
