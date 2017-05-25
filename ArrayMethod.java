@@ -2,8 +2,8 @@
 class ArrayMethod{
 	public static void main (String[]args){
 		
-		int []myArr = {1, 5, 4, 3};
-		
+		int []myArr = {1, 5, 4, 7, 3};
+		System.out.println(returnPositionOfMaxValue(myArr));
 	}
 
 	public static int returnPositionOfMaxValue(int [] inArray){
@@ -12,7 +12,7 @@ class ArrayMethod{
 		//кладем в переменную 0; (позиция элемента массива)
 		int positionOfMaxVal = 0;
 		//пилим цикл
-		for (int i =0; int i<inArray.length;i++){
+		for (int i =0;i<inArray.length;i++){
 			//если значение переменной меньше текущего значения элемента в массиве
 			if (maxValOfArray<inArray[i]){
 				//то кладем в переменную текущее значение
@@ -21,7 +21,7 @@ class ArrayMethod{
 				positionOfMaxVal = i;
 			}
 		}	
-		//возвращаем переменную с позицией ячей
+		//возвращаем переменную с позицией ячейки
 		return positionOfMaxVal;
 	}
 	
