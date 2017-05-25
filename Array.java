@@ -13,11 +13,8 @@ class Array{
 		if(inArr.length != 0){
 			//ищем наибольшее
 			//кладем в переменную наибольшее
-			outResultinArr =[i];
-
-			//возвращаем эту переменную
-			return outResult;	
 		}
-		
+		//возвращаем эту переменную
+		return outResult;
 	}
 }
