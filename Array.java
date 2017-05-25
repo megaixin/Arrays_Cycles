@@ -18,9 +18,9 @@ class Array{
 				if(maxValueOfArr<inArr[i]){
 					maxValueOfArr = inArr[i];
 				}	
+			}	
 			//кладем в переменную наибольшее
 			outResult = maxValueOfArr;
-			}	
 		}
 		//возвращаем эту переменную
 		return outResult;
