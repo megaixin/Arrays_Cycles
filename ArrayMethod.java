@@ -14,11 +14,15 @@ class ArrayMethod{
 		//пилим цикл
 		for (int i =0; int i<inArray.length;i++){
 			//если значение переменной меньше текущего значения элемента в массиве
+			if (maxValOfArray<inArray[i]){
 				//то кладем в переменную текущее значение
+				maxValOfArray = inArray[i];
 				// кладем  в 2-ю переменную позицию текущего хначения
+				positionOfMaxVal = i;
+			}
 		}	
 		//возвращаем переменную с позицией ячей
-	
+		return positionOfMaxVal;
 	}
 	
 
