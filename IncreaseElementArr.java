@@ -2,15 +2,24 @@
 class IncreaseElementArr{
 	public static void main (String[]args){
 
-		int [] myArr = new int {6,44,5,4,14,0,11};
-		increaseElrmrntOfArray(myArr, 4);
-	
+		int [] myArr = {6,44,5,4,14,0,11};
+		increaseElementOfArray(myArr, 4);
+		writeArrayOnConsole(myArr);
 	}
 	public static void increaseElementOfArray( int[]inArr, int inElenent){
 		
-		//дан массив: 6,44,5,14,0,11
-		//задача: отыскать элемент номер 3 и увеличить его значение на 10%
-	    //обращаемся к заданному элементн и увеличиваем его значение на 10%
+		inArr[inElenent] = inArr[inElenent]*10;
+
+	}
+
+	public static void writeArrayOnConsole(int[] innerMassive){
+		//System.out.println("Выводим массив: ");
+		for (int i = 0; i<innerMassive.length;i++){
+			System.out.print(innerMassive[i]+" ");
+		}
+		System.out.println();
 	
 	}
+	
+	
 }
