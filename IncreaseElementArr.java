@@ -8,8 +8,8 @@ class IncreaseElementArr{
 		writeArrayOnConsole(myArr);
 	}
 	public static void increaseElementOfArray( int[]inArr, int inElement){
-        double var = inArr[inElement]*1.1;
-		inArr[inElement] = (int)( Math.round(var));
+        double fractionVar = inArr[inElement]*1.1;
+		inArr[inElement] = (int)( Math.round(fractionVar));
 	}
 
 	public static void writeArrayOnConsole(int[] innerMassive){
