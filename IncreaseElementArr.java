@@ -3,7 +3,8 @@ class IncreaseElementArr{
 	public static void main (String[]args){
 
 		int [] myArr = {6,44,5,4,14,0,11};
-		increaseElementOfArray(myArr, 4);
+		writeArrayOnConsole(myArr);
+		increaseElementOfArray(myArr,2);
 		writeArrayOnConsole(myArr);
 	}
 	public static void increaseElementOfArray( int[]inArr, int inElenent){
