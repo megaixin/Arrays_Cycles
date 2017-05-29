@@ -8,25 +8,31 @@ class NullArray{
 		int firstNullPosition = 0;
 		//целочисленная переменная номер 2 (хранит позицию в которой второй 0)
 		int secondNullPosition = 0;
-		//пилим цикл 
-		for (int i =0;i<myArr.length;i++){
+		
+		//пилим цикл (для первого нуля)
+		for (int i = 0;i<myArr.length;i++){
 			// если текущий элемент массива = 0
 			if (myArr[i]==0){
 				//то кладем его в переменную(фиксируем 1-й ноль)
 				firstNullPosition = i;
-				
-				//если текущий элемент массива = 0 {
-				if (myArr[i]==0){
-					//то кладем его во вторую переменную(фиксируем 2-й ноль)
-					secondNullPosition = i;
-				}
+			break;
 			}
-		}		
-		System.out.println("Первsй ноль на позиции - "+ firstNullPosition + ", Второй ноль на позиции - "+ secondNullPosition );
+			
+		}			
+		System.out.println("Первый ноль на позиции - "+ firstNullPosition);
 		
+		/*//пилим цикл(для второго нуля)
+		for (int i = firstNullPosition;i<myArr.length;i++){
+			//если текущий элемент массива = 0 {
+			if (myArr[i]==0){
+				//то кладем его во вторую переменную(фиксируем 2-й ноль)
+				secondNullPosition = i;
+			}
+		
+		}
+		 System.out.println("Второй ноль на позиции - "+ secondNullPosition );
 		/*
-		 не сработало
-		 нужны два цикла, причем во второй, в качестве старта, положить позицию первого нулямито есть int i = firstNullPosition
+		часть проблемы в фиксировании первого нуля в массиве решена оператором брейк. 
 		*/
 	}
 }
