@@ -2,7 +2,7 @@
 class NullArray{
 	public static void main (String[]args){
 		
-		int[]myArr = {6,0,5,5,0,2,1,6,0};
+		int[]myArr = {6,0,5,5,2,1,0,0};
 		
 		// целочисленная переменная номер 1 (хранит позицию в которой первый 0)
 		int firstNullPosition = 0;
@@ -37,5 +37,46 @@ class NullArray{
 		другая часть проблемы фиксирования второго нуля решена оператором брейк.
 		пара проверок прошла успешно: имеем четкие позиции двух нулей.
 		*/
+	
+	
+	/*
+	 //переменная для накапливания общ.суммы =0;
+	
+	//пилим цикл, начало от firstNullPosition{
+		firstNullPosition плюс текущее значение{
+			если текущее значение равно secondNullPosition
+			выход из цикла
+		}
+	}	
+	 переменная для накапливания общ.суммы =firstNullPosition плюс текущее значение
+	 
+	 есть две позиции и то, что между ними - нужно суммировать
+	 то есть:
+	 идем от первой позиции найденого нуля , (начало0) + 5 +5 + 2 + 1 + (0конец) до позиции второго найденного нуля
+	 то есть firstNullPosition + myArr[i]+myArr[i]+myArr[i]+myArr[i]+secondNullPosition
+	 firstNullPosition + myArr[i];
+	 если myArr[i]=secondNullPosition
+	 break;
+	int sum =  firstNullPosition + myArr[i];
+	Вывод: (sum)
+	
+	*/
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	}
 }
