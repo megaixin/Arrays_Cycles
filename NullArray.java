@@ -2,7 +2,7 @@
 class NullArray{
 	public static void main (String[]args){
 		
-		int[]myArr = {6,0,5,5,10,0,1};
+		int[]myArr = {6,0,5,5,0,2,1,6,0};
 		
 		// целочисленная переменная номер 1 (хранит позицию в которой первый 0)
 		int firstNullPosition = 0;
@@ -21,18 +21,21 @@ class NullArray{
 		}			
 		System.out.println("Первый ноль на позиции - "+ firstNullPosition);
 		
-		/*//пилим цикл(для второго нуля)
-		for (int i = firstNullPosition;i<myArr.length;i++){
+		//пилим цикл(для второго нуля)
+		for (int i = firstNullPosition+1;i<myArr.length;i++){
 			//если текущий элемент массива = 0 {
 			if (myArr[i]==0){
 				//то кладем его во вторую переменную(фиксируем 2-й ноль)
 				secondNullPosition = i;
+			break;
 			}
 		
 		}
 		 System.out.println("Второй ноль на позиции - "+ secondNullPosition );
 		/*
 		часть проблемы в фиксировании первого нуля в массиве решена оператором брейк. 
+		другая часть проблемы фиксирования второго нуля решена оператором брейк.
+		пара проверок прошла успешно: имеем четкие позиции двух нулей.
 		*/
 	}
 }
