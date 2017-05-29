@@ -30,6 +30,6 @@ class NullArray{
 				break;
 			}
 		}
-		System.out.println(valueBetweenZeros);
-	}	
+	System.out.println("Cумма чисел между позициями ["+firstNullPosition+"] и ["+secondNullPosition+"] равна "+valueBetweenZeros);
+	}
 }
