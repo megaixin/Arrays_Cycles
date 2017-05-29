@@ -38,45 +38,33 @@ class NullArray{
 		пара проверок прошла успешно: имеем четкие позиции двух нулей.
 		*/
 	
-	
-	/*
-	 //переменная для накапливания общ.суммы =0;
-	
-	//пилим цикл, начало от firstNullPosition{
-		firstNullPosition плюс текущее значение{
-			если текущее значение равно secondNullPosition
-			выход из цикла
+		//переменная для накапливания общ.суммы =0;
+		int valueBetweenZeros = 0;
+		//пилим цикл, начало от firstNullPosition{
+		for(int i = firstNullPosition; i<myArr.length;i++){
+			//valueBetweenZeros плюс текущее значение
+				valueBetweenZeros = valueBetweenZeros + myArr[i];
+				//если текущее значение равно secondNullPosition
+					if(myArr[i]==secondNullPosition){
+					break;
+		
+			}
 		}
+		System.out.println(valueBetweenZeros);
+	
+	
 	}	
-	 переменная для накапливания общ.суммы =firstNullPosition плюс текущее значение
+	
+/*	переменная для накапливания общ.суммы =firstNullPosition плюс текущее значение
 	 
 	 есть две позиции и то, что между ними - нужно суммировать
 	 то есть:
 	 идем от первой позиции найденого нуля , (начало0) + 5 +5 + 2 + 1 + (0конец) до позиции второго найденного нуля
 	 то есть firstNullPosition + myArr[i]+myArr[i]+myArr[i]+myArr[i]+secondNullPosition
-	 firstNullPosition + myArr[i];
+	 valueBetweenZeros + myArr[i];
 	 если myArr[i]=secondNullPosition
 	 break;
-	int sum =  firstNullPosition + myArr[i];
 	Вывод: (sum)
-	
 	*/
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	}
+
 }
