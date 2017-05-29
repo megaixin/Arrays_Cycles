@@ -1,4 +1,4 @@
-//Найдите сумму элементов массива, которые находятся между двумя нулями. Если двух нулей в массиве нет - вывести 0
+п»ї//РќР°Р№РґРёС‚Рµ СЃСѓРјРјСѓ СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР°, РєРѕС‚РѕСЂС‹Рµ РЅР°С…РѕРґСЏС‚СЃСЏ РјРµР¶РґСѓ РґРІСѓРјСЏ РЅСѓР»СЏРјРё. Р•СЃР»Рё РґРІСѓС… РЅСѓР»РµР№ РІ РјР°СЃСЃРёРІРµ РЅРµС‚ - РІС‹РІРµСЃС‚Рё 0
 class NullArray{
 	public static void main (String[]args){
 		
@@ -13,7 +13,7 @@ class NullArray{
 				break;
 			}
 		}			
-		System.out.println("Первый ноль на позиции - "+ firstNullPosition);
+		System.out.println("РџРµСЂРІС‹Р№ РЅРѕР»СЊ РЅР° РїРѕР·РёС†РёРё - "+ firstNullPosition);
 		
 		for (int i = firstNullPosition+1;i<myArr.length;i++){
 			if (myArr[i]==0){
@@ -21,7 +21,7 @@ class NullArray{
 				break;
 			}
 		}
-		System.out.println("Второй ноль на позиции - "+ secondNullPosition );
+		System.out.println("Р’С‚РѕСЂРѕР№ РЅРѕР»СЊ РЅР° РїРѕР·РёС†РёРё - "+ secondNullPosition );
 		
 		int valueBetweenZeros = 0;
 		for(int i = firstNullPosition; i<myArr.length;i++){
@@ -30,6 +30,6 @@ class NullArray{
 				break;
 			}
 		}
-	System.out.println("Cумма чисел между позициями ["+firstNullPosition+"] и ["+secondNullPosition+"] равна "+valueBetweenZeros);
+		System.out.println("CСѓРјРјР° С‡РёСЃРµР» РјРµР¶РґСѓ РїРѕР·РёС†РёСЏРјРё ["+firstNullPosition+"] Рё ["+secondNullPosition+"] СЂР°РІРЅР° "+valueBetweenZeros);
 	}
 }
