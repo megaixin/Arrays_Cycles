@@ -1,17 +1,17 @@
-//Создайте массив из всех нечётных чисел от 1 до 99, выведите его на экран в строку, 
-//а затем этот же массив выведите на экран тоже в строку, но в обратном порядке (99 97 95 93 … 7 5 3 1)
+п»ї//РЎРѕР·РґР°Р№С‚Рµ РјР°СЃСЃРёРІ РёР· РІСЃРµС… РЅРµС‡С‘С‚РЅС‹С… С‡РёСЃРµР» РѕС‚ 1 РґРѕ 99, РІС‹РІРµРґРёС‚Рµ РµРіРѕ РЅР° СЌРєСЂР°РЅ РІ СЃС‚СЂРѕРєСѓ, 
+//Р° Р·Р°С‚РµРј СЌС‚РѕС‚ Р¶Рµ РјР°СЃСЃРёРІ РІС‹РІРµРґРёС‚Рµ РЅР° СЌРєСЂР°РЅ С‚РѕР¶Рµ РІ СЃС‚СЂРѕРєСѓ, РЅРѕ РІ РѕР±СЂР°С‚РЅРѕРј РїРѕСЂСЏРґРєРµ (99 97 95 93 вЂ¦ 7 5 3 1)
 class OrderOfArrNums{
 	public static void main(String[]args){
 		
 		int [] myArr = new int [50];
 
-		System.out.println("Заполняем массив нечетными числами: ");
+		System.out.println("Р—Р°РїРѕР»РЅСЏРµРј РјР°СЃСЃРёРІ РЅРµС‡РµС‚РЅС‹РјРё С‡РёСЃР»Р°РјРё: ");
 		for(int i = 0;i<myArr.length;i++){
 			myArr[i] =  2 * i + 1;
 		}
 		writeArrayOnConsole(myArr);
 		
-		System.out.println("Выводим массив задом наперед: ");
+		System.out.println("Р’С‹РІРѕРґРёРј РјР°СЃСЃРёРІ Р·Р°РґРѕРј РЅР°РїРµСЂРµРґ: ");
 		for(int i = myArr.length-1;i>=0;i--){
 			System.out.print(myArr[i]+ " ");
 		}
@@ -19,7 +19,7 @@ class OrderOfArrNums{
 	}
 	
 	public static void writeArrayOnConsole(int[] innerMassive){
-		//System.out.println("Выводим массив: ");
+		//System.out.println("Р’С‹РІРѕРґРёРј РјР°СЃСЃРёРІ: ");
 		for (int i = 0; i<innerMassive.length;i++){
 			System.out.print(innerMassive[i]+" ");
 		}
