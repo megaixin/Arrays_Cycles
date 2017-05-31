@@ -3,10 +3,12 @@ class BubbleSort{
 	public static void main(String[]args){
 		
 		int []myArr = {11,5,4,3,8,1,9};
+		
 		//внешний цикл 
-		for(int i = 0; i<myArr.length-1;i++){
+		
+		for(int i = 0; i<myArr.length;i++){
 			//внутренний цикл
-			for(int k=0; k<myArr.length-1;k++){
+			for(int k = 0; k<myArr.length-1;k++){
 				int a = myArr[k];
 				int b = myArr[k+1];
 				//если текущее число больше чем последующее - меняем их местами
@@ -15,8 +17,9 @@ class BubbleSort{
 					myArr[k] = b;
 				}
 			}
+			System.out.print(myArr[k]+ " ");
 		}	
-		
+		//System.out.println();
 		/*
 		вероятно, то здесь понадобится двойной цикл, чтобы он прошелся не один раз по всему массиву, а ровно столько, сколько
 		нужно чтобы цифры выстроились в последовательный ряд.
