@@ -1,18 +1,20 @@
-//РџСЂРѕРІРµСЂРёС‚СЊ, РѕС‚СЃРѕСЂС‚РёСЂРѕРІР°РЅ Р»Рё РјР°СЃСЃРёРІ РІ РѕР±СЂР°С‚РЅРѕРј РїРѕСЂСЏРґРєРµ.
+//Проверить, отсортирован ли массив в обратном порядке.
 class ReverseArr{
 	public static void main(String []args){
 		
-		//РґРІР° СЂР°Р·РЅС‹С… РјР°СЃСЃРёРІР° РґР»СЏ РїСЂРѕРІРµСЂРєРё
-		int []mySortArr = new int {1,2,3,4,5,6};
-		int []myReverseSortArr = new int {6,5,4,3,2,1};
+		//два разных массива для проверки
+		int []mySortArr = {1,2,3,4,5,6};
+		//int []myReverseSortArr = {6,5,4,3,2,1};
 		
-		for(int i = 0;i<mySortArr.length;i++){
-			if(mySortArr[i] <=mySortArr[i+1]){
-				System.out.println("РњР°СЃСЃРёРІ РѕС‚СЃРѕСЂС‚РёСЂРѕРІР°РЅ");
-				}else{
-					System.out.println("РњР°СЃСЃРёРІ РќР• РѕС‚СЃРѕСЂС‚РёСЂРѕРІР°РЅ");
-				}
-			}	
-		}		
+		boolean isSort = false;
+		
+		for(int i = 0;i<mySortArr.length-1;i++){
+			//если каждое последующее число меньше предыдущего 
+			if (mySortArr[i+1]<=mySortArr[i]){
+				isSort = true;
+			}else{
+				isSort = false;
+			}
+		}	
 	}
 } 
