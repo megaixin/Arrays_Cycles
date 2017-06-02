@@ -13,50 +13,15 @@ class ReverseArr{
 			if (myReverseSortArr[i+1]<=myReverseSortArr[i]){
 			//массив отсортирован
 				isSort = true;
-			/*
-			myReverseSortArr[5]<=myReverseSortArr[6] = correct
-			myReverseSortArr[4]<=myReverseSortArr[5] = correct
-			myReverseSortArr[3]<=myReverseSortArr[4] = correct
-			myReverseSortArr[2]<=myReverseSortArr[3] = correct
-			myReverseSortArr[1]<=myReverseSortArr[2] = correct
-			 //массив отсортирован в обратном порядке
-			 true
-			 если переменная isSort == true
-			 вывод строки: 
-			 System.out.println("Массив отсортирован");
-			
-			конец.
-			
-			//пилим цикл
-			for(int i = 0;i<mySortArr.length-1;i++){
-			//условие:
-			//если каждое последующее число меньше предыдущего  -
-			if (mySortArr[i+1]<=mySortArr[i]){
-				
-			mySortArr[1]<=myReverseSortArr[2] = correct
-			mySortArr[3]<=myReverseSortArr[1] = non correct
-			false
+			}
+			if(isSort==true){
+				System.out.println("Массив отсортирован");
+			}
+
 			if (isSort == false){
-				break;
-	
+				System.out.println("Массив  НЕ отсортирован");
 			}
-			System.out.println("Массив  НЕ отсортирован");
-			
-			*/
-			
-			
-			}
-			// если массив отсортирован - выводим на экран
-			if (isSort == true){
-				System.out.println("Массив отсортирован");
-			}else{
-				isSort = false;
-			}
-			//если не отсортирован - выводим на экран
-			if(isSort == false){
-				System.out.println("Массив отсортирован");
-			} 
-			
+			break;
 		}
 	}
 } 
