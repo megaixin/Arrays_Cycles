@@ -29,25 +29,26 @@ class ReverseArr{
 		- массив отсортирован в обратном порядке.
 		
 		//пилим цикл
+		for(int i = 0;i<mySortArr.length-1;i++){
 			//условие:
 			//если каждое последующее число меньше предыдущего  -
+			if (mySortArr[i+1]<=mySortArr[i]){
 			//массив отсортирован
+			isSort = true;
 			// если массив отсортирован - выводим на экран
+			if (isSort ==true){
+				System.out.println(Массив отсортирован);
+			}
+			если не отсортирован - выводим на экран
+			if(isSort == false){
+				System.out.println(Массив отсортирован);
+			} 
 			
-			иное - массив не отстортирован
-			выводим на экран
+			
 
 		
 		*/
 		
-		for(int i = 0;i<mySortArr.length-1;i++){
-			//если каждое последующее число меньше предыдущего 
-			if (mySortArr[i+1]<=mySortArr[i]){
-				isSort = false;
-			System.out.println("111");
-			}else{
-				//isSort = true;
-			}System.out.println("222");
-		}	
+
 	}
 } 
