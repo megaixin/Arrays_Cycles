@@ -14,14 +14,19 @@ class ReverseArr{
 			//массив отсортирован
 				isSort = true;
 			}
+			if (myReverseSortArr[i+1]>=myReverseSortArr[i]){
+				isSort = false;
+			}
+			
 			if(isSort==true){
-				System.out.println("Массив отсортирован");
-			}
-
-			if (isSort == false){
-				System.out.println("Массив  НЕ отсортирован");
-			}
+			System.out.println("Массив  отсортирован");
 			break;
+			}
+			
+			if (isSort == false){
+				break;
+			}
+			System.out.println("Массив не отсортирован");
 		}
 	}
 } 
