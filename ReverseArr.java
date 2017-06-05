@@ -3,33 +3,56 @@ class ReverseArr{
 	public static void main(String []args){
 		
 		//два разных массива для проверки
-		int []mySortArr = {2,1,3,4,5,6};
-		//int []myReverseSortArr = {6,5,4,3,2,1};
+		int []myReverseSortArr = {2,1,3,4,5,6};
+		//int [] myReverseSortArr = {6,5,4,3,2,1};
 
 		boolean isSort = true;
-		/*
-		
-		/пилим цикл
-		for (int i = 1; i<mySortArr.length;i++){
-			Условие 1:
+
+		for (int i = 0; i<myReverseSortArr.length-1;i++){
 			//если каждое последующее число массива меньше предыдущего  -
-			if (mySortArr[i+1]<=mySortArr[i]){
+			if (myReverseSortArr[i+1]<=myReverseSortArr[i]){
 				//массив считаем отсортированным
 				isSort = true;
 			}
-			Условие 2
-			//если в массиве будет хотя бы один раз так, что  последующее  число окажется больше предыдущего -
-			if (mySortArr[i+1]>mySortArr[i]){
+			//если в массиве хоть раз окажется последующее число больше предыдущего -
+			if (myReverseSortArr[i+1]>myReverseSortArr[i]){
+				//массив считаем неотсортированным.
+				isSort = false;
 				//выход из цикла
 				break;
 			}
-			//массив считаем неотсортированным.
-			isSort = false;
-		}
 			
-		
-		*/
-		
-		
+		}		
+		System.out.print(isSort);
 	}	
+
+	public static void verifyReverseSortOfArray(int [] inArray){
+		
+		boolean isSort = true;
+		
+		for (int i = 0; i<inArray.length-1;i++){
+			if (inArray[i+1]<=inArray[i]){
+				inSort = true;
+			}
+		}
+		if (inArray[i+1]>inArray[i]){
+		isSort = false;
+		
+		
+		
+		}
+		
+		
+	}
+	
+	
+
+	
+	
+
+	
+	
+	
+	
+	
 } 
