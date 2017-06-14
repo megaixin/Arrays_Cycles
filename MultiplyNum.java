@@ -19,7 +19,7 @@ class MultiplyNum {
 		
 		
 		for (int i = 0; i<myArr.length-1;i++){
-			myArr[i] = myArr[i] * myArr[i-1];
+		
 			
 		}
 		writeArrayOnConsole(myArr);
