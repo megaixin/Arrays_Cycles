@@ -8,7 +8,7 @@ class HalfSum{
 		//клонируем чтобы в него параметры массива типа int
 		System.arraycopy(myArr, 0, myCloneArr, 0, myArr.length);
 		//пытаемся вывести double типа массив, терпим крах из-за проблем с преобразованием
-		//System.out.println(myCloneArr);
+	
 		
 		
 		for (int i = 1;i<myArr.length-1;i++){  
