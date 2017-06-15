@@ -14,35 +14,17 @@ class HalfSum{
 			myDoubleArr[i] = (double) myArr[i];
 		}
 		
-		//замен€ем все элементы кроме крайних на полусумму соседей текущего числа целочисленного массива
-		for (int i = 1;i<myArr.length-1;i++){  
-			myArr[i] = (myArr[i-1] + myArr[i+1])/2;
-			for(double k = 1; k<myDoubleArr.length-1;k++){
-				
-				myDoubleArr[k] = myArr[i];
-			}
+		//заменяем все элементы кроме крайних на полусумму соседей текущего числа целочисленного массива
+		for (int i = 1;i<myDoubleArr.length-1;i++){  
+			myDoubleArr[i] = (myArr[i-1] + myArr[i+1])/2;
+		
 		}		
-		/*
-		мне нужно брать исходные цифры из неизменн€емого массива и ложить результат вычислений в другой массив
-		дробного типа.
-				
-		соседние числа массива myArr суммируютс€ и дел€тс€ между собой
-		результат идет в такой же номер €чейки клона дробного типа.
-			
-		суммируем цифры оригинала
-		кладем результат в €чейку клона аналогичую оригиналу
-			
-			
-		цикл - текуща€ €чека така€-то
-		число из оригинала + число из оригинала = сумма
-		сумма = текуща€ €чейка клона
-			
-			*/
-	
+		
+	writeArrayOnConsole(myDoubleArr);
 	}
 	
-	public static void writeArrayOnConsole(int[] innerMassive){
-		//System.out.println("¬ыводим массив: ");
+	public static void writeArrayOnConsole(double[] innerMassive){
+		//System.out.println("Выводим массив: ");
 		for (int i = 0; i<innerMassive.length;i++){
 			System.out.print(innerMassive[i]+" ");
 		}
