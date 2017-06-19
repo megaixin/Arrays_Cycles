@@ -3,10 +3,10 @@ class Fibonacci{
 	public static void main (String[]args){
 		
 		int [] fiboNums = new int [20];
-		
+		fiboNums[0] =0;
+		fiboNums[1] =1;
 		for(int i = 2;i<fiboNums.length;i++){
-			fiboNums[0] =0;
-			fiboNums[1] =1;
+			
 			fiboNums[i] = fiboNums[i-1]+fiboNums[i-2];
 		}
 		writeArrayOnConsole(fiboNums);
@@ -19,7 +19,7 @@ class Fibonacci{
 		поначалу можно положить маленький старт в виде запрограммированных первых двух чисел от которых
 		дельнейшие будут отталкиваться.
 		то есть 0 и 1 можно запрограммировать
-		а дальше сложения предыдущих двух значений сумма от которых будем ложить в текущую ячейку.
+		а дальше сложения предыдущих двух значений сумму от которых будем ложить в текущую ячейку.
 		принцип:
 		текущая ячейка номер 0 хранит значение 0 = 0
 		текущая ячейка номер 1 хранит значение 1 = 1
@@ -37,30 +37,8 @@ class Fibonacci{
 		
 		вывод
 		*/
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 	public static void writeArrayOnConsole(int[] innerMassive){
 		//System.out.println("Выводим массив: ");
 		for (int i = 0; i<innerMassive.length;i++){
