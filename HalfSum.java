@@ -16,11 +16,11 @@ class HalfSum{
 		
 		//заменяем все элементы кроме крайних на полусумму соседей текущего числа целочисленного массива
 		for (int i = 1;i<myDoubleArr.length-1;i++){  
-			myDoubleArr[i] = (myArr[i-1] + myArr[i+1])/2;
+			myDoubleArr[i] = (myArr[i-1] + myArr[i+1])/2.0;
 		
 		}		
 		
-	writeArrayOnConsole(myDoubleArr);
+		writeArrayOnConsole(myDoubleArr);
 	}
 	
 	public static void writeArrayOnConsole(double[] innerMassive){
