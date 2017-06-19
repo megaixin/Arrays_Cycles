@@ -2,6 +2,18 @@
 //например, [5,4,3,2,1,0,1,2,3,4,5]
 class CenterArray {
 	public static void main (String[]args){
+	
+	int [] arr = new int [10];
+		
+		
+		for (int i = arr.length/2;i<arr.length;i++){
+			arr[arr.length/2] = 0;
+			
+		}
+		writeArrayOnConsole(arr);
+		
+		
+		
 		
 		/*
 		к примеру нам дан массив из 9 чисел который надо заполнить числами по возрастанию начиная от центра.
@@ -16,6 +28,11 @@ class CenterArray {
 		myArr.length/2; 
 		то есть в методе int i = myArr.length/2;
 		начиная с центра, первое число ноль, а дальше по возрастанию по обе стороны.
+		
+		
+		
+		
+		
 		
 		*/
 		
