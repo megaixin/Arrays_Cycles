@@ -3,17 +3,37 @@
 class CenterArray {
 	public static void main (String[]args){
 	
-	int [] arr = new int [10];
+		int [] arr = new int [10];
 		
-		
-		for (int i = arr.length/2;i<arr.length;i++){
-			arr[arr.length/2] = 0;
+		for (int i = 0;i<arr.length;i++){
 			
+			arr[arr.length/2] = 0;
+		//Все, что не изменяется  - не будет изменяться и внутри цикла.
+		//Все, что изменяется - будет или i, или что-то типа того
+			arr[arr.length/2+1 ] = 1;
+			arr[arr.length/2-1 ] = 1;
+
+			arr[arr.length/2+2 ] = 2;
+			arr[arr.length/2-2 ] = 2;
+		
+			arr[arr.length/2+3 ] = 3;
+			arr[arr.length/2-3 ] = 3;
+			
+			arr[arr.length/2+4 ] = 4;
+			arr[arr.length/2-4 ] = 4;
+	
+	
+	
+	
+	/*
+	суть в том чтобы не гонять цикл по одному и тому же кругу много раз.
+	завернуть цикл правильно
+	разобраться в том как именно работает код внутри цикла
+	
+	
+	*/
 		}
 		writeArrayOnConsole(arr);
-		
-		
-		
 		
 		/*
 		к примеру нам дан массив из 9 чисел который надо заполнить числами по возрастанию начиная от центра.
@@ -28,11 +48,6 @@ class CenterArray {
 		myArr.length/2; 
 		то есть в методе int i = myArr.length/2;
 		начиная с центра, первое число ноль, а дальше по возрастанию по обе стороны.
-		
-		
-		
-		
-		
 		
 		*/
 		
