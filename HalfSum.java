@@ -23,7 +23,7 @@ class HalfSum{
 		writeArrayOnConsole(myDoubleArr);
 	}
 	
-	public static void writeArrayOnConsole(double[] innerMassive){
+	public static void writeArrayOnConsole(int[] innerMassive){
 		//System.out.println("Выводим массив: ");
 		for (int i = 0; i<innerMassive.length;i++){
 			System.out.print(innerMassive[i]+" ");
