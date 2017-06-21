@@ -4,21 +4,21 @@ class CenterArray {
 	public static void main (String[]args){
 	
 		int [] arr = new int [16];
-		
-		for (int i = 0;i<arr.length/2;i++){
-			
-			arr[arr.length/2+i] = i;//вправо		
-			arr[arr.length/2-i] = i;//влево
-		
-			//значение нулевой ячейки равно значению предшественницы плюс 1
-			arr[0] = i+1;
-			//значение последней ячейки массива равно значению предпоследней ячейки плюс 1
-			arr[arr.length-1] = arr[arr.length-2]+1;
-		}
-		
+
+		fillWithNumsFromCenterArr(arr);
 		writeArrayOnConsole(arr);
 	}
 
+	public static void fillWithNumsFromCenterArr(int [] inArr){
+		for (int i = 0;i<inArr.length/2;i++){
+			inArr[inArr.length/2+i] = i;		
+			inArr[inArr.length/2-i] = i;
+			
+			inArr[0] = i+1;
+			inArr[inArr.length-1] = inArr[inArr.length-2]+1;
+		}
+	}
+	
 	public static void writeArrayOnConsole(int[] innerMassive){
 		//System.out.println("Выводим массив: ");
 		for (int i = 0; i<innerMassive.length;i++){
