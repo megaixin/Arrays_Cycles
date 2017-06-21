@@ -4,35 +4,20 @@ class CenterArray {
 	public static void main (String[]args){
 	
 		int [] arr = new int [10];
+		for (int i = 0;i<arr.length/2;i++){
 		
-		for (int i = 0;i<arr.length;i++){
-			
-			arr[arr.length/2] = 0;
-		//Все, что не изменяется  - не будет изменяться и внутри цикла.
-		//Все, что изменяется - будет или i, или что-то типа того
-			arr[arr.length/2+1 ] = 1;
-			arr[arr.length/2-1 ] = 1;
+			//arr[arr.length/2] = 0;
 
-			arr[arr.length/2+2 ] = 2;
-			arr[arr.length/2-2 ] = 2;
-		
-			arr[arr.length/2+3 ] = 3;
-			arr[arr.length/2-3 ] = 3;
+			 arr[arr.length/2+i] = i;
+			 arr[arr.length/2-i] = i;
 			
-			arr[arr.length/2+4 ] = 4;
-			arr[arr.length/2-4 ] = 4;
-	
-	
-	
-	
-	/*
-	суть в том чтобы не гонять цикл по одному и тому же кругу много раз.
-	завернуть цикл правильно
-	разобраться в том как именно работает код внутри цикла
-	
-	
-	*/
+			//arr[arr.length/1+1] = 1;
+			//arr[arr.length/1-1] = 1;
 		}
+		
+
+		
+		
 		writeArrayOnConsole(arr);
 		
 		/*
