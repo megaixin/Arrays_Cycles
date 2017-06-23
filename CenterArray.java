@@ -3,7 +3,7 @@
 class CenterArray {
 	public static void main (String[]args){
 	
-		int [] arr = new int [16];
+		int [] arr = new int [11];
 
 		fillWithNumsFromCenterArr(arr);
 		writeArrayOnConsole(arr);
@@ -11,13 +11,32 @@ class CenterArray {
 
 	public static void fillWithNumsFromCenterArr(int [] inArr){
 		for (int i = 0;i<inArr.length/2;i++){
-			inArr[inArr.length/2+i] = i;		
-			inArr[inArr.length/2-i] = i;
-			
 			inArr[0] = i+1;
 			inArr[inArr.length-1] = inArr[inArr.length-2]+1;
+			
+			inArr[inArr.length/2+i] = i;		
+			inArr[inArr.length/2-i] = i;
+	
 		}
 	}
+	
+	//если делать два цикла то проблема та же что и до того как я ввела строки 
+	//inArr.length и inArr[inArr.length-1] = inArr[inArr.length-2]+1;
+	//массив не выполняется до конца
+	//даже если сделать i<=inArr.length/2 - это работает только на нечетной длинне массива.
+	//а если длинна массива четная - переполнение.
+	//даже если это можно вылечить добавлением в циклы тех строк (inArr[0] = i+1;inArr[inArr.length-1] = inArr[inArr.length-2]+1;)
+	//но как по мне лучше предыдущая версия, она получается короче.
+	
+	/*public static void fillWithNumsFromCenterArr(int [] inArr){
+		for (int i = 0;i<=inArr.length/2;i++){
+			inArr[inArr.length/2+i] = i;		
+			
+			for(int j = 0;j<=inArr.length/2;j++){
+				inArr[inArr.length/2-j] = j;
+			}
+		}
+	}*/
 	
 	public static void writeArrayOnConsole(int[] innerMassive){
 		//System.out.println("Выводим массив: ");
