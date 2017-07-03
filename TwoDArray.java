@@ -25,17 +25,65 @@ class TwoDArray{
 		System.out.println();
 		
 		
-		for(int i = 0;i<myTwoDArr.length;i++){
+		//вывести нулевой элемент нулевой строки
+		System.out.println("Нулевой элемент нулевой строки имеет значение " + myTwoDArr[0][0]);
+		
+		// вывести нулевой элемент каждой строки
+			System.out.println("Нулевые элементы каждой строки: ");
+			for (int i = 0; i < myTwoDArr.length; i++){
+				System.out.println(myTwoDArr[i][0]);
+			}
+		
+		// вывести наибольший элемент нулевой строки
+		/*
+		нулевая строка
+		int myTwoDArr[0] = {2 0 2 8 3 5 0};
+		
+		цикл идет: сравнение с чем?
+		
+		
+		*/
+		
+		
+		
+		
+		/*int myMaxValOfArr = 9857563;
+		int positionOfMaxValue = myTwoDArr[myMaxValOfArr];
+		
+		for(int i = 0; i<myTwoDArr.length;i++){
+			
+			if(myMaxValOfArr < myTwoDArr[i]){
+				myMaxValOfArr = myTwoDArr[i];
+				positionOfMaxValue = i;
+			}
 		}
-		System.out.println("Длинна массива" + " равна "+ myTwoDArr.length);
+		System.out.println("\nCамое большое число в массиве: "+ myMaxValOfArr +" "+ "в ¤чейке "+ positionOfMaxValue);
+		*/
+		
+		// - вывести наибольший элемент каждой строки
 
-	}	
-	
+		// - вывести нулевой и наибольший элемент каждой строки, а также их позиции
+
+		//- поменять нулевой и наибольший местами
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}		
 }
-
-
-
-
-/*
-
-*/
