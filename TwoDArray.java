@@ -22,41 +22,30 @@ class TwoDArray{
 			}
 			System.out.println();
 		}
-	}
-}
-	/*int[]myArray = { 5, 7, 5, 2, 11, 7, 5, 20, 12};
-
-		int myMaxValOfArray = myArray[0];
-		int positionOfMaxValue = myArray[myMaxValOfArray];
+		System.out.println();
 		
-		for(int i = 0; i<myArray.length;i++){
-			
-			if(myMaxValOfArray < myArray[i]){
-				myMaxValOfArray = myArray[i];
-				positionOfMaxValue = i;
-			}
-		}
-этот код дл€ поиска наибольшего числа в одномерном массиве
-нужно создать аналог дл€ многомерного
-int [][] myTwoDArr = new int[6][7];
+		
+		for(int i = 0;i<myTwoDArr[0].length;i++){
 
-нам нужно искать наибольшее значение в каждой —“–ќ ≈ массива
-то есть 
-0 строка - поиск, отыскали, зафиксировали наибольшее в переменной
-1 строка - отыскали, зафиксировали наибольшее в переменной
-2 строка - отыскали, зафиксировали наибольшее в переменной
- и т.д.
-	
-	int myMaxValOfArr = myTwoDArr[0][0];
-	
-	for(int i = 0;i<6;i++){
-		for(int j = 0;j<7;j++){
-			если значение в текущем столбике текущей строки значение больше чем в переменной
-			if(myMaxValOfArr[0][0])< myTwoDArr[i][j]{
-				текущиее строку/значение заносим в переменную.
-				myMaxValOfArr = TwoDArr[i][j];
-			}	
 		}
-	}	
+		System.out.println("ƒлинна строки " + " равна "+ myTwoDArr[0].length);
+
+	}
+
+	
+	
+	/*
+	что 
+	
+	*/
+	
+	
+	
 }
+
+
+
+
+/*
+
 */
