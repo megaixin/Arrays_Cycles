@@ -41,24 +41,18 @@ class TwoDArray{
 		
 		цикл идет: сравнение с чем?
 		
-		
 		*/
 		
-		
-		
-		
-		/*int myMaxValOfArr = 9857563;
-		int positionOfMaxValue = myTwoDArr[myMaxValOfArr];
-		
-		for(int i = 0; i<myTwoDArr.length;i++){
+		int myMaxValOfArr = -9857563;
+		for(int i = 0; i<myTwoDArr[0].length;i++){
 			
-			if(myMaxValOfArr < myTwoDArr[i]){
-				myMaxValOfArr = myTwoDArr[i];
-				positionOfMaxValue = i;
+			if(myMaxValOfArr < myTwoDArr[0][i]){
+				myMaxValOfArr = myTwoDArr[0][i];
+				
 			}
 		}
-		System.out.println("\nCамое большое число в массиве: "+ myMaxValOfArr +" "+ "в ¤чейке "+ positionOfMaxValue);
-		*/
+		System.out.println("\nCамое большое число в строке массива: "+ myMaxValOfArr);
+		
 		
 		// - вывести наибольший элемент каждой строки
 
