@@ -25,21 +25,11 @@ class TwoDArray{
 		System.out.println();
 		
 		
-		for(int i = 0;i<myTwoDArr[0].length;i++){
-
+		for(int i = 0;i<myTwoDArr.length;i++){
 		}
-		System.out.println("Длинна строки " + " равна "+ myTwoDArr[0].length);
+		System.out.println("Длинна массива" + " равна "+ myTwoDArr.length);
 
-	}
-
-	
-	
-	/*
-	что 
-	
-	*/
-	
-	
+	}	
 	
 }
 
