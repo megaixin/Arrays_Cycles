@@ -29,55 +29,51 @@ class TwoDArray{
 		System.out.println("Нулевой элемент нулевой строки имеет значение " + myTwoDArr[0][0]);
 		
 		// вывести нулевой элемент каждой строки
-			System.out.println("Нулевые элементы каждой строки: ");
-			for (int i = 0; i < myTwoDArr.length; i++){
-				System.out.println(myTwoDArr[i][0]);
-			}
+		System.out.println("Нулевые элементы каждой строки: ");
+		for (int i = 0; i < myTwoDArr.length; i++){
+			System.out.println(myTwoDArr[i][0]);
+		}
 		
 		// вывести наибольший элемент нулевой строки
-		/*
-		нулевая строка
-		int myTwoDArr[0] = {2 0 2 8 3 5 0};
-		
-		цикл идет: сравнение с чем?
-		
-		*/
-		
 		int myMaxValOfArr = -9857563;
 		for(int i = 0; i<myTwoDArr[0].length;i++){
-			
 			if(myMaxValOfArr < myTwoDArr[0][i]){
 				myMaxValOfArr = myTwoDArr[0][i];
-				
 			}
 		}
 		System.out.println("\nCамое большое число в строке массива: "+ myMaxValOfArr);
 		
-		
 		// - вывести наибольший элемент каждой строки
+		int myMaxValOfTwoDArr = myTwoDArr[0][0];
+		for (int i = 0;i<myTwoDArr.length;i++){//пока не кончатся строки массива
+			for( int j = 0; j<myTwoDArr[i].length;j++){//пока текущее значение столбика не достигнет конца длинны строки
+				//если значения переменной меньше чем текущие значения
+				if(myMaxValOfTwoDArr < myTwoDArr[i][j]){
+					//в переменную кладем текущие значения
+					myMaxValOfTwoDArr = myTwoDArr[i][j];
+				
+				}
+			}
+		}
+		
+		//если нулевая строка двумерного массива это myTwoDArr[0]
+		//первая строка двумерного массива это myTwoDArr[1] и т.д
+		// текущая строка массива будет myTwoDArr[i]
+		//а вообще прохождение цикла по всему двумерному массиву будет myTwoDArr.length
+		
+		for (int i = 0;i<6;i++){
+			for(int j=0;j<7;j++){
+				System.out.print(myTwoDArr[i][j]+" ");
+			}
+			System.out.println();
+		}
+		System.out.println();
+
 
 		// - вывести нулевой и наибольший элемент каждой строки, а также их позиции
 
 		//- поменять нулевой и наибольший местами
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+
 		
 	}		
 }
