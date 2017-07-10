@@ -24,43 +24,48 @@ class TwoDArray{
 		}
 		System.out.println();
 		
-		
-		//вывести нулевой элемент нулевой строки
-		System.out.println("Нулевой элемент нулевой строки имеет значение " + myTwoDArr[0][0]);
-		
-		// вывести нулевой элемент каждой строки
-		System.out.println("Нулевые элементы каждой строки: ");
-		for (int i = 0; i < myTwoDArr.length; i++){
-			System.out.println(myTwoDArr[i][0]);
-		}
-		
-		// вывести наибольший элемент нулевой строки
-		int myMaxValOfArr = -9857563;
-		for(int i = 0; i<myTwoDArr[0].length;i++){
-			if(myMaxValOfArr < myTwoDArr[0][i]){
-				myMaxValOfArr = myTwoDArr[0][i];
-			}
-		}
-		System.out.println("\nCамое большое число в строке массива: "+ myMaxValOfArr);
-		
-		// - вывести наибольший элемент каждой строки
+		//вывести наибольший элемент каждой строки
 		int myMaxValOfTwoDArr = myTwoDArr[0][0];
 		for (int i = 0;i<myTwoDArr.length;i++){//пока не кончатся строки массива
+			myMaxValOfTwoDArr = -9999999;
 			for( int j = 0; j<myTwoDArr[i].length;j++){//пока текущее значение столбика не достигнет конца длинны строки
-				//если значения переменной меньше чем текущие значения
-				if(myMaxValOfTwoDArr < myTwoDArr[i][j]){
-					//в переменную кладем текущие значения
-					myMaxValOfTwoDArr = myTwoDArr[i][j];
 				
+				if(myMaxValOfTwoDArr < myTwoDArr[i][j]){
+					myMaxValOfTwoDArr = myTwoDArr[i][j];
+					
+					
+					//текущий номер строки нулевой индекс столбика равно самое большое число текущей строки
+					myTwoDArr[i][0] = myMaxValOfTwoDArr;
+					//нужно поменять самое большое число текущей строки с значением в нулевом столбике
+					//а значение нулевого столбика каждой строки положить на место наибольшего значения в строке
+					//пример:
+					//строка 0 стоблик 3 4 6 1 
+					//идем по строке по столбикам:
+					// проверяем: 3 равно myMaxValOfTwoDArr? нет, идем дальше; 4 равно myMaxValOfTwoDArr? нет, дальше;
+					//6 равно myMaxValOfTwoDArr? да - если 6 равно myMaxValOfTwoDArr, то переносим его значение в нулевой столбик текущей
+					//строки, а значение нулевого стоблика заносим на место самого большого числа
+					
+					//цикл
+						//проверка путем сравнения
+						//то, что делаем при совпадении результата
+						//выводим результат
+					
+					
+					
+					
+					
+					
+					
+					
+					
 				}
 			}
+			System.out.println("В строке номер " + i + " самое большое число "+ myMaxValOfTwoDArr);
+	
+		
+	
+	
 		}
-		
-		//если нулевая строка двумерного массива это myTwoDArr[0]
-		//первая строка двумерного массива это myTwoDArr[1] и т.д
-		// текущая строка массива будет myTwoDArr[i]
-		//а вообще прохождение цикла по всему двумерному массиву будет myTwoDArr.length
-		
 		for (int i = 0;i<6;i++){
 			for(int j=0;j<7;j++){
 				System.out.print(myTwoDArr[i][j]+" ");
@@ -68,12 +73,8 @@ class TwoDArray{
 			System.out.println();
 		}
 		System.out.println();
-
-
 		// - вывести нулевой и наибольший элемент каждой строки, а также их позиции
 
 		//- поменять нулевой и наибольший местами
-
-		
 	}		
 }
