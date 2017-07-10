@@ -32,40 +32,22 @@ class TwoDArray{
 				
 				if(myMaxValOfTwoDArr < myTwoDArr[i][j]){
 					myMaxValOfTwoDArr = myTwoDArr[i][j];
-					
-					
-					//текущий номер строки нулевой индекс столбика равно самое большое число текущей строки
-					myTwoDArr[i][0] = myMaxValOfTwoDArr;
-					//нужно поменять самое большое число текущей строки с значением в нулевом столбике
-					//а значение нулевого столбика каждой строки положить на место наибольшего значения в строке
-					//пример:
-					//строка 0 стоблик 3 4 6 1 
-					//идем по строке по столбикам:
-					// проверяем: 3 равно myMaxValOfTwoDArr? нет, идем дальше; 4 равно myMaxValOfTwoDArr? нет, дальше;
-					//6 равно myMaxValOfTwoDArr? да - если 6 равно myMaxValOfTwoDArr, то переносим его значение в нулевой столбик текущей
-					//строки, а значение нулевого стоблика заносим на место самого большого числа
-					
-					//цикл
-						//проверка путем сравнения
-						//то, что делаем при совпадении результата
-						//выводим результат
-					
-					
-					
-					
-					
-					
-					
-					
-					
 				}
 			}
 			System.out.println("В строке номер " + i + " самое большое число "+ myMaxValOfTwoDArr);
 	
-		
-	
-	
 		}
+		for (int x =0; x<myTwoDArr.length;x++){
+			for( int y = 0; y<myTwoDArr[x].length;y++){
+				//проверка путем сравнения
+				if (myTwoDArr[x][y]= myMaxValOfTwoDArr){
+					//то, что делаем при совпадении результата
+					myTwoDArr[x][y] = myTwoDArr[x][0];
+					myTwoDArr[x][0] = myMaxValOfTwoDArr;
+				}
+			}
+		}
+	
 		for (int i = 0;i<6;i++){
 			for(int j=0;j<7;j++){
 				System.out.print(myTwoDArr[i][j]+" ");
