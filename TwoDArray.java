@@ -24,7 +24,12 @@ class TwoDArray{
 		for (int i = 0;i<myTwoDArr.length;i++){					
 			int mostValuePosition = findMostValueOfArray(myTwoDArr[i]);	//вывести позицию максимального числа
 			System.out.println("В строке номер " + i + " самое большое число на позиции "+ mostValuePosition);
-		
+
+			int a = myTwoDArr[i][0];									//переставить местами заданные элементы 
+			int b = myTwoDArr[i][mostValuePosition];
+
+			myTwoDArr[i][0] = b;
+			myTwoDArr[i][mostValuePosition]= a;
 		}	
 
 		for (int i = 0;i<6;i++){									//вывести массив повторно
