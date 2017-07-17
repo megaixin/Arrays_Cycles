@@ -19,10 +19,9 @@ class LineArray{
 			//значение текущего элемента равно значению последующего элемента
 			inArr[i] = inArr[i+1];
 		}
-		//последнее значение элемента равно значению заданному в переменной
+		// значение последнего элемента массива равно значению заданному в переменной
 		inArr[inArr.length-1] = inNewElement;
 	}
-	
 	
 	public static void writeArrayOnConsole(int[] innerMassive){
 		//System.out.println("Выводим массив: ");
@@ -31,5 +30,4 @@ class LineArray{
 		}
 		System.out.println();
 	}
-	
 }
