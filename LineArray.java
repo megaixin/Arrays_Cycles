@@ -9,12 +9,12 @@ class LineArray{
 		//выводим изначальный массив на консоль
 		writeArrayOnConsole(myArray);
 		//сдвигаем массив и добавляем число в конец помощью метода
-		addElemetnToEndOfArray(myArray, myNewElement);
+		addElementToEndOfArray(myArray, myNewElement);
 		//выводим измененный массив на консоль
 		writeArrayOnConsole(myArray);
 		
 	}
-	public static void addElemetnToEndOfArray (int []inArr, int inNewElement){
+	public static void addElementToEndOfArray (int []inArr, int inNewElement){
 		for(int i = 0; i<inArr.length-1;i++){ //исключаем переполнение
 			//значение текущего элемента равно значению последующего элемента
 			inArr[i] = inArr[i+1];
