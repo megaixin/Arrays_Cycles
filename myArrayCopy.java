@@ -12,16 +12,16 @@ class myArrayCopy{
 		writeArrayOnConsole(myDestinationArray);
 		
 		//используем метод копирования массива
-		myCopyArrayMethod(mySourceArray, myDestinationArray);
+		myCopyArrayMethod(mySourceArray, 2, myDestinationArray, 2);
 
 		System.out.println("Вывоводим массив myDestinationArray после копирования: ");
 		writeArrayOnConsole(myDestinationArray);
 
 	}
  
-	public static void myCopyArrayMethod(int []inSourceArray, int []inDestinationArray){
+	public static void myCopyArrayMethod(int []inSourceArray, int innerSourseElement, int []inDestinationArray, int innerDestinationElement){
 		for(int i = 0; i<inSourceArray.length;i++){
-			inDestinationArray[i] = inSourceArray[i];
+			inDestinationArray[innerDestinationElement] = inSourceArray[innerSourseElement];
 		}
 	}
 
