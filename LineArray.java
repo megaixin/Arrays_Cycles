@@ -3,7 +3,7 @@
 class LineArray{
 	public static void main (String []args){
 		
-		int []myArray = {1,5,7,12,3,90,7,16,82};//10 символов
+		int []myArray = {1,5,7,12,3,90,7,16,82};//9 символов
 		//переменная гле мы задаем число
 		int myNewElement = 11;
 		//выводим изначальный массив на консоль
