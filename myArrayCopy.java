@@ -1,36 +1,42 @@
-п»ї//РЊР°РїРёСЃР°С‚СЊ СЃРІРѕР№ Р°РЅР°Р»РѕРі РјРµС‚РѕРґР° System.arraycopy()
+//Ќаписать свой аналог метода System.arraycopy()
 class myArrayCopy{
 	public static void main (String []args){
  
 		int[] mySourceArray = {12,16,44,91,18,84,25};//7
 		int[] myDestinationArray = {1,1,1,1,1,1,1};//7
 
-		System.out.println("Р’С‹РІРѕРґРёРј РјР°СЃСЃРёРІ-РѕСЂРёРіРёРЅР°Р» mySourceArray: ");
+		System.out.println("Выводим массив-оригинал mySourceArray: ");
 		writeArrayOnConsole(mySourceArray);
 		
-		System.out.println("Р’С‹РІРѕРґРёРј РјР°СЃСЃРёРІ РґР»СЏ РєРѕРїРёСЂРѕРІР°РЅРёСЏ myDestinationArray РїРѕСЃР»Рµ РёР·РјРµРЅРµРЅРёР№: ");
+		System.out.println("Выводим массив для копирования myDestinationArray после изменений: ");
 		writeArrayOnConsole(myDestinationArray);
 		
-		//РёСЃРїРѕР»СЊР·СѓРµРј РјРµС‚РѕРґ РєРѕРїРёСЂРѕРІР°РЅРёСЏ РјР°СЃСЃРёРІР°
-		myCopyArrayMethod(mySourceArray, 1, myDestinationArray, 3, 3);
+		//используем метод копирования массива
+		myCopyArrayMethod(mySourceArray, 2, myDestinationArray, 4, 2);
 
-		System.out.println("Р’С‹РІРѕРґРёРј РјР°СЃСЃРёРІ myDestinationArray РїРѕСЃР»Рµ РєРѕРїРёСЂРѕРІР°РЅРёВ¤: ");
+		System.out.println("Выводим массив myDestinationArray после копировани¤: ");
 		writeArrayOnConsole(myDestinationArray);
 	}
  
 	public static void myCopyArrayMethod(
-		int []inSourceArray, 		//РёСЃС…РѕРґРЅС‹Р№ РјР°СЃСЃРёРІ РёР· РєРѕС‚РѕСЂРѕРіРѕ РєРѕРїРёСЂСѓРµРј
-		int inSourceElement, 		//РЅРѕРјРµСЂ СЌР»РµРјРµРЅС‚Р° РёСЃС…РѕРґРЅРѕРіРѕ РјР°СЃСЃРёРІР° СЃ РєРѕС‚РѕСЂРѕРіРѕ РЅР°С‡РёРЅР°РµРј РєРѕРїРёСЂРѕРІР°РЅРёРµ
-		int []inDestArray, 			//РєРѕРЅРµС‡РЅС‹Р№ РјР°СЃСЃРёРІ, РІ РєРѕС‚РѕСЂС‹Р№ РєРѕРїРёСЂСѓРµРј
-		int inDestElement, 			//РЅР°С‡Р°Р»СЊРЅС‹Р№ РЅРѕРјРµСЂ СЌР»РµРјРµРЅС‚Р° РєРѕРЅРµС‡РЅРѕРіРѕ РјР°СЃСЃРёРІР° РІ РєРѕС‚РѕСЂС‹Р№ РєРѕРїРёСЂСѓРµРј
-		int inCountOfCopyElement){ 	//РєРѕР»РёС‡РµСЃС‚РІРѕ РєРѕРїРёСЂСѓРµРјС‹С… СЌР»РµРјРµРЅС‚РѕРІ РёР· РёСЃС…РѕРґРЅРѕРіРѕ РІ РєРѕРїРёСЂСѓРµРјС‹Р№ СЌР»РµРјРµРЅС‚
+		int []inSourceArray, 		//исходный массив из которого копируем
+		int inSourceElement, 		//номер элемента исходного массива с которого начинаем копирование
+		int []inDestArray, 			//конечный массив, в который копируем
+		int inDestElement, 			//начальный номер элемента конечного массива в который копируем
+		int inCountOfCopyElement){ 	//количество копируемых элементов из исходного в копируемый элемент
+	
+		//нужно скопировать три элемента из исходного массива в конечный.
+		//три элемента - это три значениЯ из Ячеек исходного массива которые надо переложить
+		//в условные три Ячейки конечного массива, перетерев те что там лежали до него.
+		
+			inDestArray[inDestElement+inCountOfCopyElement] = inSourceArray[inSourceElement];
 			
-		inDestArray[inDestElement] = inSourceArray[inSourceElement];
-
+			//inDestArray[inDestElement+1] = inSourceArray[inSourceElement+1];		
+			//inDestArray[inDestElement+2] = inSourceArray[inSourceElement+2];
 	}
 
 	public static void writeArrayOnConsole(int[] innerMassive){
-		//System.out.println("В¬С‹РІРѕРґРёРј РјР°СЃСЃРёРІ: ");
+		//System.out.println("¬ыводим массив: ");
 		for (int i = 0; i<innerMassive.length;i++){
 			System.out.print(innerMassive[i]+" ");
 		}
