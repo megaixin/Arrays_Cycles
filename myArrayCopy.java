@@ -5,16 +5,16 @@ class myArrayCopy{
 		int[] mySourceArray = {12,16,44,91,18,84,25};//7
 		int[] myDestinationArray = {1,1,1,1,1,1,1};//7
 
-		System.out.println("Вывоводим массив-оригинал mySourceArray: ");
+		System.out.println("Выводим массив-оригинал mySourceArray: ");
 		writeArrayOnConsole(mySourceArray);
 		
-		System.out.println("Вывоводим массив для копирования myDestinationArray после изменений: ");
+		System.out.println("Выводим массив для копирования myDestinationArray после изменений: ");
 		writeArrayOnConsole(myDestinationArray);
 		
 		//используем метод копирования массива
 		myCopyArrayMethod(mySourceArray, 1, myDestinationArray, 3, 3);
 
-		System.out.println("Вывоводим массив myDestinationArray после копировани¤: ");
+		System.out.println("Выводим массив myDestinationArray после копировани¤: ");
 		writeArrayOnConsole(myDestinationArray);
 	}
  
