@@ -12,7 +12,7 @@ class myArrayCopy{
 		writeArrayOnConsole(myDestinationArray);
 		
 		//используем метод копировани€ массива
-		myCopyArrayMethod(mySourceArray, 2, myDestinationArray, 4, 2);
+		myCopyArrayMethod(mySourceArray, 2, myDestinationArray, 4, 3);
 
 		System.out.println("¬ыводим массив myDestinationArray после копировани§: ");
 		writeArrayOnConsole(myDestinationArray);
@@ -28,11 +28,10 @@ class myArrayCopy{
 		//нужно скопировать три элемента из исходного массива в конечный.
 		//три элемента - это три значения из ячеек исходного массива которые надо переложить
 		//в условные три ячейки конечного массива, перетерев те что там лежали до него.
-		
-			inDestArray[inDestElement+inCountOfCopyElement] = inSourceArray[inSourceElement];
-			
-			//inDestArray[inDestElement+1] = inSourceArray[inSourceElement+1];		
-			//inDestArray[inDestElement+2] = inSourceArray[inSourceElement+2];
+
+			for(int i = 0;i<inCountOfCopyElement; i++){
+				inDestArray[inDestElement +i ] = inSourceArray[inSourceElement + i];
+			}
 	}
 
 	public static void writeArrayOnConsole(int[] innerMassive){
