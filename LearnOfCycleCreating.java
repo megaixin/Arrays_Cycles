@@ -4,7 +4,25 @@ class LearnOfCycleCreating{
 	
 		wrapUpIntoCycle(9); 
 		multiplicationTableOnTwo(7);
+	
+		
+		
+		for(int i = 30; i>0;i--){
+			//если число делится на три
+			if(i%3==0){
+				
+			System.out.println("вьяняня!");
+			continue;
+			}
+			
+			if(i%5==0){
+			System.out.println("урву!");
+			continue;
+			}
+			System.out.println(i+" ");
+		}
 	}
+	
 	/*1. 
 	Свернуть в цикл код
 	System.out.println ( 1 );
@@ -30,4 +48,40 @@ class LearnOfCycleCreating{
 			System.out.println("два в степени " + i + " - это " + Math.pow(inExponentiatedNum, i));	
 		}
 	}
+
+	/*3. Вывести на консоль обратный отсчет от 30 до 0
+	Но если число делится на 3, вместо него выводить "цензоред", а если делится на пять - выводить "роскомнадзор".
+	Если делится и на три, и на пять, выводить "девветь". 
+	вывод будет типа
+	девветь
+	29 
+	28
+	цензоред
+	26
+	роскомнадзор
+	цензоред
+	23
+	22
+	цензоред
+	...*/
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
