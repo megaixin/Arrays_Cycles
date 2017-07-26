@@ -6,17 +6,21 @@ System.out.println ( 5 );
 System.out.println ( 7 );
 System.out.println ( 9 );
 */
-
 class LearnOfCycleCreating{
 	public static void main (String[]args){
 	
 	
-		for (int i =0;i<9;i++){
+		/*for (int i =0;i<9;i++){
 			System.out.println ( 1+i );
 		}
-	
-	
+		*/
+		wrapUpIntoCycle(6); 
 	
 	}
 
+	public static void wrapUpIntoCycle(int inNumber){
+		for (int i =0;i<inNumber;i++){
+			System.out.println ( 1+i );
+		}
+	}
 }
