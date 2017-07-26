@@ -1,26 +1,27 @@
 /*
-РЎРІРµСЂРЅСѓС‚СЊ РІ С†РёРєР» РєРѕРґ:
-System.out.println ( 1 );
-System.out.println ( 3 );
-System.out.println ( 5 );
-System.out.println ( 7 );
-System.out.println ( 9 );
+2. Вывести циклом на консоль строки
+два в степени 1 - это 2
+два в степени 2 - это 4
+два в степени 3 - это 8
+два в степени 4 - это 16
+два в степени 5 - это 32
 */
 class LearnOfCycleCreating{
 	public static void main (String[]args){
 	
-	
-		/*for (int i =0;i<9;i++){
-			System.out.println ( 1+i );
-		}
-		*/
-		wrapUpIntoCycle(6); 
+		wrapUpIntoCycle(9); 
 	
 	}
 
 	public static void wrapUpIntoCycle(int inNumber){
-		for (int i =0;i<inNumber;i++){
-			System.out.println ( 1+i );
+		for (int i = 1;i<=inNumber;i+=2){
+			System.out.println ( i );
 		}
 	}
+
+	
+	
+	
+	
+	
 }
