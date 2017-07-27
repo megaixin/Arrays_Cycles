@@ -1,0 +1,44 @@
+class TwoDArrayCopy{
+	public static void main (String[]args){
+		
+		//Cоздать двумерный массив из 6 строк по 7 столбцов в каждой из случайных целых чисел из отрезка [0;9]. 
+		int [][] myTwoDArr = new int[6][7];//строки - 6 столбцы - 7
+		
+		for(int i = 0;i<6;i++){
+			for(int j =0;j<7;j++){
+				myTwoDArr[i][j] = (int)(Math.random()*10);
+			}
+		}		
+		//Вывести массив на экран
+		for (int i = 0;i<6;i++){
+			for(int j=0;j<7;j++){
+				System.out.print(myTwoDArr[i][j]+" ");
+			}
+			System.out.println();
+		}
+		System.out.println();
+		
+		
+		//вывести нулевой элемент нулевой строки
+		System.out.println("Нулевой элемент нулевой строки имеет значение " + myTwoDArr[0][0]);
+
+		// вывести нулевой элемент каждой строки
+		System.out.println("Нулевые элементы каждой строки: ");
+		for (int i = 0; i < myTwoDArr.length; i++){
+			System.out.println(myTwoDArr[i][0]);
+		}
+		
+		// вывести наибольший элемент нулевой строки
+		int myMaxValOfArr = -9857563;
+		for(int i = 0; i<myTwoDArr[0].length;i++){
+			if(myMaxValOfArr < myTwoDArr[0][i]){
+				myMaxValOfArr = myTwoDArr[0][i];
+			}
+		}
+		System.out.println("\nCамое большое число в строке массива: "+ myMaxValOfArr);
+		
+		
+		
+		
+		
+	}	
