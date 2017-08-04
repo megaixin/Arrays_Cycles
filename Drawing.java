@@ -17,10 +17,10 @@ class Drawing{
 		panel.setBackground(Color.WHITE);
 		
 		//делаем две кнопки: одна будет рисовать другая очищать панель от нарисованного
-		JButton cleaningButton = new JButton();
+		JButton cleaningButton = new JButton("Clean");
 		cleaningButton.setBounds(10,360,130,50);
 		
-		JButton drawingButton = new JButton();
+		JButton drawingButton = new JButton("Draw");
 		drawingButton.setBounds(150,360,130,50);
 		
 		//добавляем панель и кнопки на фрейм
