@@ -13,19 +13,27 @@ class Drawing{
 		
 		
 		JPanel panel = new JPanel();
-		panel.setBounds(10, 7, 270, 400);
+		panel.setBounds(10, 7, 270, 350);
 		panel.setBackground(Color.WHITE);
 		
 		JButton cleaningButton = new JButton();
-		//cleaningButton.setBounds();
+		cleaningButton.setBounds(10,360,130,50);
 		
 		
+		JButton drawingButton = new JButton();
+		drawingButton.setBounds(150,360,130,50);
 		
 		frame.add(panel);
+		frame.add(cleaningButton);
+		frame.add(drawingButton);
+		
+		
+		
+		
 		frame.setVisible(true);
 		panel.setVisible(true);
-	
-	
+		cleaningButton.setVisible(true);
+		drawingButton.setVisible(true);
 	
 	
 	}
