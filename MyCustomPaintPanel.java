@@ -13,7 +13,10 @@ class MyCustomPaintPanel extends JPanel{
 		//например 
    
 		g.setColor(Color.BLACK);
-		g.drawLine(20, 40, 320, 20);  
-		
+		g.drawLine(130, 100, 200, 5);  
+		g.drawLine(60, 200, 15, 15);
+		g.drawLine(60, 200, 300, 20);
+		g.setColor(Color.BLUE);
+		g.drawOval(50, 50, 40, 50);
 	}
 }
