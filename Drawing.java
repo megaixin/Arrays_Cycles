@@ -12,7 +12,7 @@ class Drawing{
 		frame.setLayout(null);
 		
 		//делаем панель
-		JPanel panel = new JPanel();
+		MyCustomPaintPanel panel = new MyCustomPaintPanel();
 		panel.setBounds(10, 7, 270, 350);
 		panel.setBackground(Color.WHITE);
 		
