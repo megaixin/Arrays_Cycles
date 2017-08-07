@@ -18,5 +18,10 @@ class MyCustomPaintPanel extends JPanel{
 		g.drawLine(60, 200, 300, 20);
 		g.setColor(Color.BLUE);
 		g.drawOval(50, 50, 40, 50);
+		g.setColor(Color.RED);
+		g.drawOval(70, 60, 30, 40);
+	
 	}
+
+	
 }
