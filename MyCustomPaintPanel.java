@@ -1,54 +1,45 @@
-//СЃРѕР·РґР°С‚СЊ РєР»Р°СЃСЃ MyCustomPaintPanel, СѓРЅР°СЃР»РµРґРѕРІР°С‚СЊСЃСЏ РёРј РѕС‚ JPanel Рё РїРµСЂРµРѕРїСЂРµРґРµР»РёС‚СЊ РјРµС‚РѕРґ paint(Graphics g){}
-//РЅР°СЃР»РµРґСѓРµРј - РїРѕР»СѓС‡Р°РµРј С„СѓРЅРєС†РёРѕРЅР°Р». РїРµСЂРµРѕРїСЂРµРґРµР»СЏРµРј - РїРѕР»СѓС‡Р°РµРј РІРѕР·РјРѕР¶РЅРѕСЃС‚СЊ РїРёСЃР°С‚СЊ СЃРІРѕР№ С„СѓРЅРєС†РёРѕРЅР°Р» РїРѕРјРёРјРѕ РёРјРµСЋС‰РµРіРѕСЃСЏ
-
+//создать класс MyCustomPaintPanel, унаследоваться им от JPanel и переопределить метод paint(Graphics g){}
+//наследуем - получаем функционал. переопределяем - получаем возможность писать свой функционал помимо имеющегося
 import javax.swing.*;
 import java.awt.Color;
 import java.awt.Graphics;
+import java.awt.image.BufferedImage;
 class MyCustomPaintPanel extends JPanel{
 
+	public boolean isWePaintSomething = false;
+	BufferedImage myBuffImage = new BufferedImage(20,20,BufferedImage.TYPE_INT_RGB);
 
  @Override
- public void paint(Graphics g){
-	super.paint(g);
-	myPaintMethod(g); 
-
-	boolean isPaintingSomeShit = true; 
+	public void paint(Graphics g){
+		super.paint(g);
+		
+		if (isWePaintSomething == true){
+			myPaintMethod(g); 
+		}
+	}	
 	
-	/*if ( isPaintingSomeShit == true){
-		myPaintMethod(g); 
-
-	}*/
-}
-
- /*
-  РѕС‚СЂРёСЃРѕРІРєР° РїР°РЅРµР»Рё РїРѕСЃС‚РѕСЏРЅРЅР°
-  РЅРѕ С‚РѕР»СЊРєРѕ РµСЃР»Рё Сѓ РЅР°СЃ РїРµСЂРµРјРµРЅРЅР°СЏ С‚СЂСѓ  - РёРґРµС‚ РѕС‚СЂРёСЃРѕРІРєР° РјРµС‚РѕРґР°
-  РґРІР° СЌРєС€РЅР›РёСЃС‚РµРЅРµСЂР° РґР»СЏ РєР°Р¶РґРѕР№ РєРЅРѕРїРєРё
-  Р±СѓР»РµРІР° РїРµСЂРµРјРµРЅРЅР°СЏ
-  РµСЃР»Рё РїРµСЂРµРјРµРЅРЅР°СЏ С‚СЂСѓ - РѕС‚СЂРёСЃРѕРІС‹РІР°РµРј РјРµС‚РѕРґ РїРѕРІРµСЂС… РїР°РЅРµР»СЊРєРё
-  
-  РєР°Рє РІСЃРµ-С‚Р°РєРё РІ СЌС‚РѕРј СѓС‡Р°СЃС‚РІСѓСЋС‚ РєРЅРѕРїРєРё?
-   
-  РµСЃС‚СЊ РґРІРµ РєРЅРѕРїРєРё Рё РѕРґРЅР° РёР· РЅРёС… Р±СѓРґРµС‚ Р·Р°РґРµР№СЃС‚РІРѕРІР°С‚СЊ РјРµС‚РѕРґ РЅР°СЂРёСЃРѕРІРєРё РЅР° РїР°РЅРµР»Рё
-  РїР°РЅРµР»СЊ РІРѕС‚: super.paint(g);
-  Р° РјРµС‚РѕРґ РІРѕС‚: myPaintMethod(g); 
-  
-  РµСЃС‚СЊ Р±СѓР»РµРІР° РїРµСЂРµРјРµРЅРЅР°СЏ 
-  С‚Р°РєРѕРµ С‡СѓРІСЃС‚РІРѕ С‡С‚Рѕ РєРЅРѕРїРєРё РІРѕРѕР±С‰Рµ РЅР°С„РёРі РЅСѓР¶РЅС‹.
-
- */
- 
-
- 
- 
+	
+	
 	public void myPaintMethod(Graphics g){
-		g.setColor(Color.BLACK);
-		g.drawLine(130, 100, 200, 5);  
-		g.drawLine(60, 200, 15, 15);
-		g.drawLine(60, 200, 300, 20);
-		g.setColor(Color.BLUE);
-		g.drawOval(50, 50, 40, 50);
-		g.setColor(Color.RED);
-		g.drawOval(70, 60, 30, 40);
+		Graphics imgCanvas = myBuffImage.getGraphics();
+
+		imgCanvas .setColor(Color.GREEN);
+		imgCanvas .drawLine(5, 5, 17, 12);
+		//g.drawImage(myBuffImage, 20, 20, this);
+		boolean Graphics.drawImage(
+		Image img,//картинка, которую мы рисуем
+	   int dstx1,//координаты по x, справа. от левого края до края картинки по горизонтали
+	   int dsty1,//координаты от верхнего края панели до края картинки по вертикали
+	   int dstx2,//координаты от левого края до края картинки по горизонтали
+	   int dsty2,//координаты от верхнего края панели до нижнего края картинки по вертикали
+       int srcx1,//
+	   int srcy1,//
+	   int srcx2,//
+	   int srcy2,//
+       ImageObserver observer//
+	   );
+	
+	
+	
 	}
 }
