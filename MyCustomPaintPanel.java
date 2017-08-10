@@ -24,7 +24,7 @@ class MyCustomPaintPanel extends JPanel{
 		imgCanvas.setColor(Color.GREEN);
 		imgCanvas.drawLine(5, 5, 17, 12);
 		g.drawImage(myBuffImage, 10, 15, 200, 250,
-		0, , 20, 20,
+		0, 0, 20, 20,
 		null);
 	}
 }
