@@ -1,5 +1,5 @@
-п»ї//СЃРѕР·РґР°С‚СЊ РєР»Р°СЃСЃ MyCustomPaintPanel, СѓРЅР°СЃР»РµРґРѕРІР°С‚СЊСЃСЏ РёРј РѕС‚ JPanel Рё РїРµСЂРµРѕРїСЂРµРґРµР»РёС‚СЊ РјРµС‚РѕРґ paint(Graphics g){}
-//РЅР°СЃР»РµРґСѓРµРј - РїРѕР»СѓС‡Р°РµРј С„СѓРЅРєС†РёРѕРЅР°Р». РїРµСЂРµРѕРїСЂРµРґРµР»СЏРµРј - РїРѕР»СѓС‡Р°РµРј РІРѕР·РјРѕР¶РЅРѕСЃС‚СЊ РїРёСЃР°С‚СЊ СЃРІРѕР№ С„СѓРЅРєС†РёРѕРЅР°Р» РїРѕРјРёРјРѕ РёРјРµСЋС‰РµРіРѕСЃСЏ
+//создать класс MyCustomPaintPanel, унаследоваться им от JPanel и переопределить метод paint(Graphics g){}
+//наследуем - получаем функционал. переопределяем - получаем возможность писать свой функционал помимо имеющегося
 import javax.swing.*;
 import java.awt.Color;
 import java.awt.Graphics;
@@ -17,14 +17,26 @@ class MyCustomPaintPanel extends JPanel{
 			myPaintMethod(g); 
 		}
 	}	
-	
+	//работаем с методом
 	public void myPaintMethod(Graphics g){
 		Graphics imgCanvas = myBuffImage.getGraphics();
-		
-		imgCanvas.setColor(Color.GREEN);
 		imgCanvas.drawLine(5, 5, 17, 12);
-		g.drawImage(myBuffImage, 10, 15, 200, 250,
+		
+		
+		for(int i = 1; i<19;i++){
+			myBuffImage.setRGB(9, 1*i,0xFF0000);
+			
+		}
+		
+		for(int i = 1; i<19;i++){
+			myBuffImage.setRGB(  i , 9 ,0xFF0000);
+		}
+		
+		g.drawImage(myBuffImage, 10, 15, 200+10, 200+15,
 		0, 0, 20, 20,
 		null);
+		
+	
+	
 	}
 }
