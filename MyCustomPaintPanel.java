@@ -58,6 +58,5 @@ class MyCustomPaintPanel extends JPanel{
 		null);
 		
 	
-	
 	}
 }
