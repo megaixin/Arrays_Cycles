@@ -40,11 +40,18 @@ class MyCustomPaintPanel extends JPanel{
 		for(int i = 9; i<12;i++){
 			//верхняя смотрит впрево горизонтальная
 			myBuffImage.setRGB(i, 1, 0xFF0000);
-			
 			//нижняя смотрит вправо горизонтальная
 			myBuffImage.setRGB(i-2, 18, 0xFF0000); 
 		}
 		
+		
+		for(int i = 1; i<6;i++){
+			//крестик в верхнем левом углу (прямой)
+			myBuffImage.setRGB(5, 1*i, 0xFF0004);
+			myBuffImage.setRGB(i+2, 5-2, 0xFF0000); 
+		}
+		
+
 		
 		g.drawImage(myBuffImage, 10, 15, 200+10, 200+15,
 		0, 0, 20, 20,
