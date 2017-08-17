@@ -22,25 +22,28 @@ class MyCustomPaintPanel extends JPanel{
 		Graphics imgCanvas = myBuffImage.getGraphics();
 		//рисуем вертикальную линию в центре квадрата
 		for(int i = 1; i<19;i++){
-			myBuffImage.setRGB( 9, 1*i ,0xFF0000);
+			myBuffImage.setRGB( 9, 1*i ,0xFFFFFF);
 		}
 		//1 прямая горизонтальная линия
-		for(int i = 4; i<15;i++){
-			myBuffImage.setRGB(  i , 5 ,0xFF0000);	
+		for(int i = 5; i<14;i++){
+			myBuffImage.setRGB(  i , 5 ,0xFFFFFF);	
 		}
 		//2 прямая горизонтальная линия
 		for(int i = 2; i<17;i++){
-			myBuffImage.setRGB(  i , 10 ,0xFF0000);	
+			myBuffImage.setRGB(  i , 12 ,0xFFFFFF);	
 		}
 		//3 прямая горизонтальная линия
 		for(int i = 1; i<19;i++){
-			myBuffImage.setRGB(  i , 16 ,0xFF0000);	
+			myBuffImage.setRGB(  i , 17 ,0xFFFFFF);	
 		}
+		imgCanvas.drawLine(9, 1, 16-3, 5);
+		imgCanvas.drawLine(9, 5, 16-1, 12);
+		
+		
 		
 		g.drawImage(myBuffImage, 10, 15, 200+10, 200+15,
 		0, 0, 20, 20,
 		null);
 		
-	
 	}
 }
