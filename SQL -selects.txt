@@ -1,4 +1,4 @@
-SELECT model, hd
+п»їSELECT model, hd
 FROM Laptop
 WHERE price > 1000
 
@@ -9,9 +9,9 @@ WHERE price > 1000
 SELECT DISTINCT model, ram, screen
 FROM Laptop
 WHERE price > 1000
-правильно
+РїСЂР°РІРёР»СЊРЅРѕ
 
 SELECT *
 FROM Printer
 WHERE color = 'y'
-правильно с первого раза
+РїСЂР°РІРёР»СЊРЅРѕ СЃ РїРµСЂРІРѕРіРѕ СЂР°Р·Р°
