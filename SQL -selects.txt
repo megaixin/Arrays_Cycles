@@ -10,3 +10,8 @@ SELECT DISTINCT model, ram, screen
 FROM Laptop
 WHERE price > 1000
 правильно
+
+SELECT *
+FROM Printer
+WHERE color = 'y'
+правильно с первого раза
