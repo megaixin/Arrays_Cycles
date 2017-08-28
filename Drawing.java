@@ -41,7 +41,6 @@ class Drawing{
 		
 		});
 		 
-		
 		//добавляем панель и кнопки на фрейм
 		frame.add(panel);
 		frame.add(cleaningButton);
