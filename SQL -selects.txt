@@ -15,3 +15,22 @@ SELECT *
 FROM Printer
 WHERE color = 'y'
 правильно с первого раза
+
+
+SELECT model, speed, hd
+FROM PC
+WHERE price < 600 AND cd = '12' OR '24'
+
+
+SELECT model, speed, hd
+FROM PC
+WHERE price < 600 AND cd = '12x' OR '24x'
+
+SELECT model, speed, hd
+FROM PC
+WHERE (cd = '12x' OR '24x') AND price <600
+
+SELECT model, speed, hd
+FROM PC
+WHERE (CD = '12x' OR CD ='24x') AND price <600
+ПРАВИЛЬНО
